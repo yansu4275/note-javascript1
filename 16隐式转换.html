@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+/*内容为数字的字符串（string）进行运算，
+    数据类型会变成数据类型（number），
+    通过这种特性可进行隐式转换成number*/
+		
+/*隐式转换成number
+	1.使用加号进行隐式转换*/
+			var a = "123";
+			a = +a;
+			console.log(a);      
+			console.log(typeof a);        /*number*/
+			
+/*	2.使用乘号*/			
+			var b = "321";
+			b = b*2;
+			console.log(b);
+			console.log(typeof b);		   /*number*/		
+			
+			var c = "456";
+			c = c-0;
+			console.log(c);
+			console.log(typeof c);
+			
+			var d = "654";
+			d = d/1;
+			console.log(d);
+			console.log(typeof d);
+			
+			var e = "123";
+			e = e%10;
+			console.log(e);
+			console.log(typeof e);
+			
+
+
+/*number转换成string   """"""""""""""""""""""""""""""""""*/
+			var f=123;
+			f = f+"";
+			console.log(f);
+			console.log(typeof f);
+			
+
+
+/*boolean转换*/
+/*		123的boolean值为true
+ 		!g===========>false
+ 		!!g========   >true*/
+			var g=123;
+			g =!!g;
+			console.log(g);             /*true*/
+			console.log(typeof g);      /*bolean*/
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

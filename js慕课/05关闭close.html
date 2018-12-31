@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var aaa=confirm("是否打开百度？")
+			if (aaa==true){
+				var bbb=window.open("http://www.baidu.com");
+				
+				var ccc=confirm("是否关闭？")
+				if (ccc==true){
+				bbb.close()
+				} 
+				
+			}
+			else{
+				document.write("不打开")
+			}
+			
+			/*var ccc=window.open("http://www.baidu.com");  
+    		ccc.close();  */
+			
+			
+		</script>
+	</head>
+	<body>
+		
+		
+		
+	</body>
+</html>

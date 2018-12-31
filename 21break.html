@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+
+
+/*	break:终止循环
+	下面的循环中，while(true) 的条件是prompt的确定
+	也就是即使账号密码输入对了，点击确定依然会循环下去
+	在if中添加break可以让账号密码正确时终止循化
+ */
+
+			var xingming = prompt("请输入账户名：","admin");
+			var mima=prompt("请输入密码：","666666");
+			while (true){
+				if(xingming=="admin" && mima=="666666"){
+					alert("登录成功！");
+					break
+				}
+				else {
+					alert("账户或密码有误");
+					xingming=prompt("请重新输入账户名：");
+					mima=prompt("请重新输入密码：");
+				}
+			}
+			alert("over")
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

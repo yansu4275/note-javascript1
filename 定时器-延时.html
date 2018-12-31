@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oBtn1 = document.getElementById('btn1');
+				var oBtn2 = document.getElementById('btn2');
+//				var timer = null;  /**/
+				
+				oBtn1.onclick=function(){
+					timer=setTimeout(function(){
+						alert('三秒了')
+					},3000)
+				};
+				
+				//设置关闭时要先设置一个变量，setIerval传入变量，关闭时引入变量就行
+				oBtn2.onclick=function(){
+					clearTimeout(timer)
+				}
+			};
+			
+			
+		</script>
+	</head>
+	<body>
+		<p>setTimerout() 间隔定时器，一段时间后再运行</p>
+		
+		<input type="button" name="" id="btn1" value="开始" />
+		<input type="button" name="" id="btn2" value="停止" />
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#abcd{
+				height: 400px;
+				width: 400px;
+				border: 1px solid black;
+				word-break:break-all
+			}
+/*连续的输入英文或者是数字，就会产生溢出。如果正常的中文就不会产生这种问题，
+ * 				可用break-all*/			
+			
+/*取消设置		removeAttribute("style")*/			
+			
+		</style>
+		
+		
+		
+		
+	</head>
+	<body>
+		<div id="abcd">
+			<p>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</p>
+			<p>111111111111111111111111111111111111111111111111</p>
+			<p>122222222222222222222222222222222222222222222222</p>
+			<p>444444444444444444444444444444444444444444444444</p>
+			<p>999999999999999999999999999999999999999999999999</p>
+		</div>
+		
+		<form action="" method="post">
+			<input type="button" value="改变颜色" onclick="aaa()"/>
+			<input type="button" value="改变宽高" onclick="bbb()"/>
+			<input type="button" value="点击隐藏" onclick="ccc()"/>
+			<input type="button" value="点击显示" onclick="ddd()"/>
+			<input type="button" value="取消设置" onclick="eee()"/>
+		</form>
+		
+		
+		
+		<script type="text/javascript">
+			var ooo=document.getElementById("abcd");
+			function aaa(){
+				ooo.style.color="red";
+				ooo.style.backgroundColor="yellow";
+			}
+			function bbb(){
+				ooo.style.height="300px";
+				ooo.style.width="300px";
+			}
+			function ccc(){
+				ooo.style.display="none";
+			}
+			function ddd(){
+				ooo.style.display="block";
+			}
+			function eee(){
+				var fff=confirm("是否取消所有设置？")
+				if(fff==true){
+					ooo.removeAttribute("style")
+				}
+			}
+		</script>
+	</body>
+</html>

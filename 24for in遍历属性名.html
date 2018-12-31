@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h3>for in 循环遍历对象属性名，返回的是字符串，通过属性名获取属性值，不能用aaa.key，只能用aaa[key]</h3>
+	</body>
+</html>
+<script type="text/javascript">
+	var aaa = {
+		name:	'姓名',
+		age:	'年龄',
+		sex:	'性别',
+		job:	'工作',
+		// 原型属性
+		__proto__:{
+			width:	'宽度'
+		}
+	}
+	for(var key in aaa){
+		// aaa.hasOwnProperty(key) 判断这个属性是不是对象的原型属性
+		if (aaa.hasOwnProperty(key)){
+			// 返回的属性名是字符串形式
+			// 通过返回的属性名获取属性值，只能用 aaa[key]
+			console.log(key +'-'+ typeof(key) +'-'+ aaa.key +'-'+ aaa[key])
+		}
+		
+		
+//		console.log(`${key}-${typeof(key)}-${aaa.key}-${aaa[key]}`)
+	}
+</script>

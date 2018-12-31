@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+/*
+	&&  并且   有一个是错的就都是错的
+	||  或者   有一个是对的就都是对的
+	！    非（取反）
+*/
+			var a=false;
+			var b=true;
+			
+			var c=a&&b;  
+			var d=a||b;
+			
+			console.log(c);  /*falre*/
+			console.log(d);  /*true*/
+			
+			var e=!a;
+			var f=!b;
+			
+			console.log(e);  /*true*/
+			console.log(f);  /*false*/
+
+/*逻辑运算符的优先级：
+ 	! > && > || 
+*/
+			var g=true || false && true;
+			var h=false || true && false;
+			var i=true || false && false;
+			console.log(g);              /*true*/
+			console.log(h);              /*false*/
+			console.log(i);              /*true*/
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

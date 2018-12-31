@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p id="bbb">javascript</p>
+		
+		
+		<script type="text/javascript">
+			var aaa = document.getElementById("bbb")
+			document.write("原标题："+aaa.innerHTML + "<br>")
+					
+			aaa.innerHTML="javascript真他妈难"
+			document.write("改后标题："+aaa.innerHTML)
+		</script>
+
+<!--innerHTML 用于获取或替换html元素的内容
+	15行 	innerHTML可以直接修改变量内容，也可以直接用p标签的id
+	
+	****************************貌似要写在标签后面
+-->		
+	</body>
+</html>

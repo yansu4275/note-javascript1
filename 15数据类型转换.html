@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+		
+			var a =prompt("请随便输入数字");
+			console.log(typeof a);  /*string*/
+/*string=====>number*/
+/*1：number(字符串、boolean)
+ 		如果转换的内容可以转成数字，那么久直接返回对应的数字
+ 		如果不可以转换那么返回NaN
+ 		如果在内容中出现小数，小数会保留
+ 		如果内容为空，转换成0*/
+			a=Number(a);
+			console.log(a);  /*number*/
+
+
+/*2：parseInt()     转换整数
+ 		如果有小说点，会去掉小数  222.333===>222
+ 		如果第一个字符是数字，则继续解析知道非数字
+ */
+			var b="222abc333";
+			b=parseInt(b);
+			console.log(b);
+			console.log(typeof b);
+			
+			
+/*3.parseFloat()    
+		paseFloat与paseInt类似，区别在于可以转换小数
+ */
+			var c="123.321";
+			c=parseFloat(c);
+			console.log(c);
+			console.log(typeof c);
+			
+			
+			
+			
+/*number=====>string*/
+/*1.	toString()     直接调用这个变量对象 */
+			var d=123;              /*number*/
+			d=d.toString();
+			console.log(d);
+			console.log(typeof d);   /*string*/
+			
+/*2.	string()       强制转换*/			
+			var e=true;              /*number*/
+			e=String(e);
+			console.log(e);
+			console.log(typeof e);   /*string*/
+			
+			
+			
+/*Boolean转换*/			
+/*1.	Boolean:
+ 			除了false、0、""、NaN、Undefined(不赋值)会转换成flase，
+ 			其余的都会转换成true（包括"flase"）*/
+			var f=false;
+			f=Boolean(f);
+			console.log(f);
+			console.log(typeof f);
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+/*++++++++++++++++
+ 	1.如果加号两边是字符串，加号作用是连接
+ 	2.如果加号两边是数值，加号作用是计算
+ 	3.如果加号一边是字符串一边是数值，加号作用是连接*/
+			var a = 123;
+			var b ="123";
+			console.log(a+a+a+b);/*369123*/
+			console.log(b+a+a+a);/*123123123123*/
+			
+			
+/*-----------------
+ 	*/
+ 			var c = "abc";
+ 			var d = 123;
+ 			console.log(c-d);    /*NaN*/
+   			console.log(typeof(c-d));   /*number*/
+   			
+/******************
+ 	*/
+ 			var e = "2";
+ 			var f = 123;
+ 			console.log(e*f);    /*246*/
+ 			
+/*/////////////////
+	*/
+   			var g = "123";
+ 			var h = 123;
+ 			console.log(g/h);    /*1*/
+ 			
+/*%%%%%%%%%%%%%%%%%取余数
+ 	*/
+ 			var j = "123";
+ 			var k = 2;
+ 			console.log(j%k);    /*123模以2==>1*/
+ 			
+/*()          改变运算优先级
+ 	*/
+   			var l = 3;
+ 			var m = 2;
+ 			console.log(l+m*m)      /*7*/
+ 			console.log((l+m)*m);	/*10*/
+ 			
+ 			
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+/*function
+	function后跟    函数名()	与body中的相对应
+	相当于将韩硕代码与按钮绑定，点击按钮调用代码
+	
+*/
+		
+			function aaa(){
+				console.log("这里是点击input按钮弹出的内容")
+			}
+			function bbb(){
+				console.log("这里是点击button按钮弹出的内容")
+			}
+
+
+/*function封装函数*/
+			function jisuan(ccc,ddd){
+				console.log(ccc+ddd);
+//              return he;    **********返回值********************
+			}
+			var yi=11;
+			var er=22;
+			jisuan(yi,er);
+//			var he =jisuan(yi,er)
+			
+			
+			
+			
+		</script>
+		
+		
+	</head>
+	<body>
+	<input type="button" value="input按钮" onclick="aaa()" />
+	<button type="button" onclick="bbb()">button按钮</button>
+	</body>
+</html>

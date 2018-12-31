@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var a=3;
+			a++;    /*a+=1;     a=a+1    自增  */
+			console.log(a);
+
+/*后加,先计算运算，再计算++*/
+			var b=2;
+			var c=3;
+			var d=b++ + c++;       /*var d=b+c; b=b+1;  c=c+1;*/
+			console.log(b);        /*3*/
+			console.log(c);        /*4*/
+			console.log(d);        /*5*/
+			
+/*先加，先计算++，再计算运算*/			
+			var e=2;
+			var f=3;
+			var g=++e + ++f;       /*var e=e+1;  f=f+1;  g=e+f;*/
+			console.log(e);        /*3*/
+			console.log(f);        /*4*/
+			console.log(g);        /*7*/
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

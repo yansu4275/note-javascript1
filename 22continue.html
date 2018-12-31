@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+/*如下，计算1~100中个位不为9的数的和，当a个位为9时，程序运行，
+ console后台中会显示这次循环，只是he不增加
+ 
+ 使用	continue	可以使本次循环终止，不再执行，
+ console后台就不会显示这次循环*/
+
+		/*计算1~100中个位不为9的数的和*/
+			var a= 1;
+			var he=0;
+			while (a<=100){
+				if(a%10==9){
+					a++;
+					continue;  /****************************/
+				}
+				else{
+					he+=a;
+					a++;
+				}
+				console.log(he)
+			}
+			console.log("1~100中个位不为9的数的和为："+he)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
